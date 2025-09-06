@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 2.3 - Image Alignment</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+
+    .container {
+      border: 1px solid black;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .float-left {
+      float: left;
+      margin-right: 10px;
+    }
+    .float-right {
+      float: right;
+      margin-left: 10px;
+    }
+    .block-center {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p>Left alignment (default)</p>
+    <img src="https://via.placeholder.com/50" alt="left">
+  </div>
+
+  <div class="container text-center">
+    <p>Center alignment using text alignment classes</p>
+    <img src="https://via.placeholder.com/50" alt="center">
+  </div>
+
+  <div class="container text-right">
+    <p>Right alignment using text alignment classes</p>
+    <img src="https://via.placeholder.com/50" alt="right">
+  </div>
+
+  <div class="container">
+    <p>Horizontal alignment using float classes</p>
+    <img src="https://via.placeholder.com/50" class="float-left" alt="left float">
+    <img src="https://via.placeholder.com/50" class="float-right" alt="right float">
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="container">
+    <p>Center alignment of block-level image using auto margin</p>
+    <img src="https://via.placeholder.com/50" class="block-center" alt="block center">
+  </div>
+
+</body>
+</html>
